@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Twoza — Redirecting</title>
+    <meta http-equiv="refresh" content="0; url=index.html">
+    <link rel="shortcut icon" href="favi.png?v=1" type="image/png">
+</head>
+<body>
+    Redirecting to <a href="index.html">index.html</a> — if you are not redirected, click the link.
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+body {
+    line-height: 1.6;
+    background: #ffffff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    display: inline;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.hero {
+    background: #f4f8ff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #0d6efd;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #084298;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.light-bg {
+    background: #f9f9f9;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+
+</style>
+
+<header>
+    <div class="container">
+        <h1>FreshFold Services</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#book">Book Now</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Reliable Laundry & Home Cleaning in Kampala</h2>
+        <p>Trusted workers. Affordable pricing. Pay after satisfaction.</p>
+        <a href="#book" class="btn-primary">Book Service Now</a>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <div class="container">
+        <h2>Our Services</h2>
+
+        <div class="service-card">
+            <h3>Laundry Services</h3>
+            <p>Washing, drying, folding, ironing.</p>
+            <p><strong>Starting from 20,000 UGX per basket.</strong></p>
+        </div>
+
+        <div class="service-card">
+            <h3>Light Home Cleaning</h3>
+            <p>Room cleaning, bathrooms, kitchens.</p>
+            <p><strong>Starting from 30,000 UGX.</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="how-it-works" class="section light-bg">
+    <div class="container">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Submit your request online.</li>
+            <li>We call to confirm details and price.</li>
+            <li>Our trusted worker arrives.</li>
+            <li>You inspect and pay after satisfaction.</li>
+        </ol>
+    </div>
+</section>
+
+<section id="book" class="section">
+    <div class="container">
+        <h2>Book a Service</h2>
+
+        <form action="https://formspree.io/f/yourformid" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="location" placeholder="Your Location" required>
+
+            <select name="service" required>
+                <option value="">Select Service</option>
+                <option value="Laundry">Laundry</option>
+                <option value="Cleaning">Light Cleaning</option>
+            </select>
+
+            <textarea name="details" placeholder="Describe your task..." required></textarea>
+
+            <input type="date" name="date" required>
+
+            <button type="submit" class="btn-primary">Submit Request</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact" class="section light-bg">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Phone: +256 753 870 072</p>
+        <p>WhatsApp: +256 753 870 072</p>
+        <p>Service Area: Kampala & Mukono</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 FreshFold Services. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
